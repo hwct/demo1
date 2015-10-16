@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    <ImageView 
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:src="@drawable/bank"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/iv_bank_icon"
+        android:scaleType="fitXY"
+        />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_bank_managertype"
+        android:textSize="16sp"
+        android:text="营业网点:"
+        android:layout_toRightOf="@id/iv_bank_icon"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="12dp"
+        >
+    </TextView>
+    <TextView 
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_bank_managertype"
+        android:layout_toRightOf="@id/iv_bank_icon"
+        android:layout_marginLeft="12dp"
+        android:id="@+id/tv_bank_autotype"
+        android:text="自动柜台机:"
+        />
+
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_bank_manager_count"
+        android:layout_toRightOf="@id/tv_bank_managertype"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="14dp"
+        android:text="3"
+        />
+    <TextView 
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="14dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2"
+        android:id="@+id/tv_bank_auto_count"
+        android:layout_toRightOf="@id/tv_bank_autotype"
+        android:layout_below="@id/tv_bank_manager_count"
+        android:layout_alignTop="@id/tv_bank_autotype"
+        />
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_mindistance"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="4dp"
+        android:text="2.1km"
+        />
+</RelativeLayout>

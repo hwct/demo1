@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <declare-styleable name="myopenview">
+        <attr name="openViewBackground" format="reference" />
+        <attr name="openViewTouchButton" format="reference" />
+        <attr name="isopen" format="boolean"></attr>
+     </declare-styleable>
+</resources>

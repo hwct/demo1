@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:hwct="http://schemas.android.com/apk/res/com.example.demo1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/iv_account"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitXY"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/icon_me_normal"
+        android:layout_centerHorizontal="true" 
+        />
+
+    <RelativeLayout 
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/iv_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+	        <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:id="@+id/tv_acount_test"
+	            android:layout_alignParentLeft="true"
+	            android:layout_marginLeft="3dp"
+	            android:text="testsestsrss"
+	            />
+		    <com.example.demo1.view.OpenView
+			    android:layout_centerInParent="true"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    hwct:openViewBackground="@drawable/switch_background"
+			    hwct:openViewTouchButton="@drawable/slide_button"
+			    android:layout_alignParentRight="true"
+			    hwct:isopen="true"
+			    android:id="@+id/openview"
+			    >
+			 </com.example.demo1.view.OpenView>
+	</RelativeLayout> 
+    
+</RelativeLayout>
