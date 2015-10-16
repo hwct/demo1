@@ -18,6 +18,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.Window;
 import android.widget.RadioButton;
+import android.widget.Toast;
 
 public class MainActivity extends FragmentActivity implements OnClickListener{
 
@@ -41,6 +42,8 @@ public class MainActivity extends FragmentActivity implements OnClickListener{
 			initFragments();
 			baseTabFrgamentAdapter = new BaseTabFrgamentAdapter(getSupportFragmentManager(), fragmentsList);
 			viewPager.setAdapter(baseTabFrgamentAdapter);
+			
+			Toast.makeText(getBaseContext(), "sssss", 0).show();
 			
 	}
 
